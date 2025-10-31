@@ -1,0 +1,158 @@
+#include <iostream>
+using namespace std;
+
+
+// //Prob1
+// int power(int base, int exp) {
+//     int result = 1;
+//     if (exp == 0) {
+//         return result;
+//     }
+//     else{
+//         return base * power(base, exp - 1);
+//     }
+// }
+// int main() {
+//     cout << power(2, 3) << endl;
+// }
+
+
+// //Prob2
+// int reverse(int n, int reversed=0) {
+//     if (n == 0)
+//         return reversed;
+//     else
+//         return reverse( n/10, reversed*10+n%10);
+// }
+// int main() {
+//     int n;
+//     cin>>n;
+//     cout<<reverse(n);
+// }
+
+
+// //Prob3
+// int reverse(int n, int r=0) {
+//     if (n==0) return r;
+//     else return reverse(n/10, r*10+n%10);
+// }
+//
+// bool isPalindrome(int n) {
+//     return  n==reverse(n);
+// }
+//
+// int main() {
+//     int n;
+//     cin>>n;
+//     cout<<(isPalindrome(n) ? "palindrome": "not palindrome")<<endl;
+// }
+
+
+// //prob 4
+// bool prime(int n, int i=2) {
+//     if (n<=2) return n==2;
+//     if (n%i==0) return false;
+//     if (i*i>n) return true;
+//     return (n, i++);
+// }
+//
+// int main() {
+//     int n;
+//     cin>>n;
+//     cout<<(prime(n)?"prime":"not prime");
+// }
+
+// //prob 5
+// int countEven(int n) {
+//     if (n==0) return 0;
+//     return countEven(((n%10%2==0)+countEven((n/10))));
+// }
+//
+//  int main(){
+//      int n;
+//      cin>>n;
+//      cout<<countEven(n);
+//  }
+
+// //prob 6
+// int ProductOfDigits(int n) {
+//     if (n==0) return 0;
+//     return ProductOfDigits(n/10) * n%10;
+// }
+// int main() {
+//     int n;
+//     cin>>n;
+//     cout<<ProductOfDigits(n)<<endl;
+//     return 0;
+// }
+
+
+// //prob 7
+// bool isPowerOfTwo(int n, int i=1) {
+//     if (n==0) return false;
+//     if (i==n) return true;
+//     if (i>n) return false;
+//     return isPowerOfTwo(n, i*2);
+// }
+//
+// int main(){
+//     int n;
+//     cin>>n;
+//     if (isPowerOfTwo(n)==1)
+//         cout<<"True"<<endl;
+//     else
+//         cout<<"False"<<endl;
+//     return 0;
+// }
+
+
+
+
+// //p8
+// bool growdigits(int x){
+//     if(x<10)return true;
+//     int last=x%10;
+//     x/=10;
+//     int next=x%10;
+//     if(next>=last)return false;
+//     return growdigits(x);
+// }
+// int main8(){
+//     int t;
+//     cin>>t;
+//     cout<<(growdigits(t)?"YES":"NO");
+//     return 0;
+// }
+
+
+
+
+// //p9
+// int zerocount(int x){
+//     if(x==0)return 1;
+//     if(x<10)return 0;
+//     return (x%10==0)+zerocount(x/10);
+// }
+// int main9(){
+//     int d;
+//     cin>>d;
+//     cout<<zerocount(d);
+//     return 0;
+// }
+
+
+// //p10
+// int quickpow(int a,int b){
+//     if(b==0)return 1;
+//     if(b%2==0){
+//         int s=quickpow(a,b/2);
+//         return s*s;
+//     }
+//     return a*quickpow(a,b-1);
+// }
+// int main10(){
+//     int n,m;
+//     cin>>n>>m;
+//     cout<<quickpow(n,m);
+//     return 0;
+// }
