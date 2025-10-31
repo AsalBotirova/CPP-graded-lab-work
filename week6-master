@@ -1,0 +1,231 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+// //prob 1
+// float product(float a, float b) {
+//     return a * b;
+// }
+//
+//
+// //prob 2
+// float acceleration(float v1, float v2, float t) {
+//     return (v2-v1)/t;
+// }
+//
+//
+// //prob 3
+// void fun(float radius) {
+//     cout << "Circumference: " << 2 * 3.14159 * radius<<endl;
+//     cout << "Area: " << 3.14159 * radius*radius<<endl;
+// }
+//
+//
+// //prob 4
+// void fun(float a, float b) {
+//     cout << "Perimeter= " << (a + b)*2 << endl;
+//     cout << "Area= " << (a * b) << endl;
+// }
+//
+//
+// //prob 5
+// int swapNum(int &x, int &y) {
+//     x = x+y;
+//     y = x-y;
+//     x = x-y;
+// }
+//
+//
+// //prob 6
+// int Factorial(int n=1) {
+//     int fact = 1;
+//     for (int i=1; i<=n; i++) {
+//         fact = fact * i;
+//     }
+//     return fact;
+// }
+//
+//
+// //prob 7
+// int gcd(int num1, int num2) {
+//     while (num2!=0) {
+//         int remainder=num1%num2;
+//         num1=num2;
+//         num2=remainder;
+//     }
+//     return num1;
+// }
+//
+//
+// //prob 8
+// void maxNum(float a, float b, float c) {
+//     float maximum=a;
+//     if (b>max) maximum=b;
+//     if (c>max) maximum=c;
+//     cout <<"Max number is "<< maximum;
+// }
+//
+// void minNum(float a, float b, float c) {
+//     float minimum=a;
+//     if (b<min) minimum=b;
+//     if (c<min) minimum=c;
+//     cout <<"Min number is "<< minimum;
+// }
+//
+//
+// //prob 9
+// float sum(float a, float b) {
+//     return a+b;
+// }
+//
+// float subtract(float a, float b) {
+//     return a-b;
+// }
+//
+// float product(float a, float b) {
+//     return a*b;
+// }
+//
+// float division(float a, float b) {
+//     if (b==0) {
+//         cout <<"Error: Division by zero!";
+//     }
+// }
+
+
+// //prob 11
+// void displayEven(int number) {
+//     if (number==0) return;
+//
+//     int digit = number % 10;
+//     displayEven(number/10);
+//
+//     if (digit % 2 ==0) {
+//         cout << digit<< " ";
+//     }
+// }
+
+
+
+// //prob 12
+// int cubeOfDigits(int number) {
+//     int sum =0;
+//     while (number!=0) {
+//         int digit = number % 10;
+//         number = number/10;
+//         sum+=digit*digit*digit;
+//     }
+//     return sum;
+// }
+//
+// void isArmStrong(int sum, int number) {
+//     if (sum==number)
+//         cout<<"The number is ArmStrong.";
+//     else
+//         cout <<"The number is not ArmStrong.";
+// }
+//
+// int main() {
+//     int n;
+//     cout <<"Enter a number to check if ArmStrong: ";
+//     cin>>n;
+//
+//     int sum = cubeOfDigits(n);
+//     isArmStrong(sum, n);
+//
+//     return 0;
+// }
+
+
+
+//
+// //prob 13
+// int numberOfDaysInFebruary(int year) {
+//     if ((year%400==0) || (year % 4 ==0 && year %100 !=0)) {
+//         return 29;
+//     }
+//     else {
+//         return 28;
+//     }
+// }
+//
+
+// // //prob 15
+// void printASCII(char ch1, char ch2, int numberPerLine) {
+//     int count = 0;
+//     for (char ch = ch1; ch<=ch2; ch++) {
+//         cout<<ch<<" ";
+//         count++;
+//         if (count==numberPerLine)
+//             cout <<endl;
+//     }
+// }
+//
+// int main() {
+//     cout << "ASCII values from 'a' to 'm':" << endl;
+//     printASCII('a', 'm', 6);
+//     return 0;
+// }
+
+
+//prob 16
+using namespace std;
+
+void printMatrix(int n) {
+    srand(time(0));
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            int value = rand() % 1001;
+            cout << setw(5) << value;
+        }
+        cout << endl;
+    }
+}
+
+int main() {
+    int n;
+    cout << "Enter size of matrix (n): ";
+    cin >> n;
+
+    cout << "\nGenerated " << n << " x " << n << " matrix:\n";
+    printMatrix(n);
+
+    return 0;
+}
+
+
+
+//prob 19
+void displaySortedNumber(double a, double b, double c) {
+    if (a > b) {
+        double temp = a;
+        a = b;
+        b = temp;
+    }
+
+    if (a > c) {
+        double temp = a;
+        a = c;
+        c = temp;
+    }
+
+    if (b > c) {
+        double temp = b;
+        b = c;
+        c = temp;
+    }
+
+    cout << "Numbers in increasing order: "
+         << a << " " << b << " " << c << endl;
+}
+
+int main() {
+    double x, y, z;
+
+    cout << "Enter three numbers: ";
+    cin >> x >> y >> z;
+
+    displaySortedNumber(x, y, z);
+
+    return 0;
+}
