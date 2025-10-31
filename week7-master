@@ -1,0 +1,175 @@
+#include <iostream>
+using namespace std;
+
+// //prob 5
+// void deposit(double &balance);
+// void withdrawal(double &balance);
+// void checkBalance(double balance);
+//
+// int main() {
+//     double balance=500.0;
+//     int menu;
+//
+//     do {
+//         cout << "Choose the operation you want to perform:\n";
+//         cout <<"1.Deposit\n";
+//         cout <<"2.Withdrawal\n";
+//         cout <<"3.Check Balance\n";
+//         cout <<"4.Exit"<<endl;
+//         cin >>menu;
+//
+//         switch (menu) {
+//             case 1:
+//                 deposit(balance);
+//                 break;
+//             case 2:
+//                 withdrawal(balance);
+//                 break;
+//             case 3:
+//                 checkBalance(balance);
+//                 break;
+//             case 4:
+//                 cout << "Exiting";
+//                 break;
+//             default:
+//                 cout <<"Invalid option";
+//         }
+//     } while (menu!=4);
+// }
+//
+// void deposit(double &balance) {
+//     double amount;
+//     cout<<"Enter amount to deposit in dollar: ";
+//     cin>>amount;
+//
+//     if (amount>0) {
+//         balance+=amount;
+//         cout<<"Successful deposit. New balance: $"<<balance;
+//     }
+//     else cout<<"Invalid amount";
+// }
+//
+// void withdrawal(double &balance) {
+//     double amount;
+//     cout << "Enter amount for withdrawal: ";
+//     cin >> amount;
+//
+//     if (amount <= 0) {
+//         cout << "Amount should be positive.\n";
+//     } else if (amount > balance) {
+//         cout << "Not enough money\n";
+//     } else {
+//         balance -= amount;
+//         cout << "Successful withdrawal. You can take your cash. New balance: $" << balance<<endl;
+//     }
+// }
+//
+//
+// void checkBalance(double balance) {
+//     cout<<"Your current balance: $"<<balance<<endl;
+// }
+
+
+// //prob 6
+// double totalPrice(double price, int numOftickets);
+//
+// int main() {
+//     int numOfTickets;
+//     double total;
+//     char repeat, choice;
+//
+//     do {
+//         cout<<"Movie Ticket Booking System\n";
+//         cout << "Movie A ($8 per ticket)\n";
+//         cout << "Movie B ($10 per ticket)\n";
+//         cout << "Movie C ($12 per ticket)\n";
+//         cout << "Enter your choice (A or B or C): ";
+//         cin >> choice;
+//
+//         switch (choice) {
+//             case 'A':
+//                 cout << "You selected Movie A.\n";
+//                 cout << "Enter number of tickets: ";
+//                 cin >> numOfTickets;
+//                 total = totalPrice(8, numOfTickets);
+//                 cout << "Total cost: $" << total << endl;
+//                 break;
+//
+//             case 'B':
+//                 cout << "You selected Movie B.\n";
+//                 cout << "Enter number of tickets: ";
+//                 cin >> numOfTickets;
+//                 total = totalPrice(10, numOfTickets);
+//                 cout << "Total cost: $" << total << endl;
+//                 break;
+//
+//             case 'C':
+//                 cout << "You selected Movie C.\n";
+//                 cout << "Enter number of tickets: ";
+//                 cin >> numOfTickets;
+//                 total = totalPrice(12, numOfTickets);
+//                 cout << "Total cost: $" << total << endl;
+//                 break;
+//
+//             default:
+//                 cout << "Invalid choice! Please select A, B, or C\n";
+//         }
+//
+//         cout << "\nDo you want to book another movie? Enter(y or n): ";
+//         cin >> repeat;
+//         }while (repeat == 'y' || repeat == 'Y');
+//
+//     cout << "Thank you for using the Movie Booking System!\n";
+//     }
+//
+// double totalPrice(double price, int numOftickets) {
+//     return price*numOftickets;
+// }
+
+
+// //prob 7
+// double calculateFee(int hours) {
+//     double fee = 0;
+//
+//     if (hours <= 2) {
+//         fee = 0;
+//     }
+//     else if (hours <= 5) {
+//         fee = (hours - 2) * 2;
+//     }
+//     else {
+//         fee = (3 * 2) + (hours - 5) * 5;
+//     }
+//
+//     return fee;
+// }
+//
+//
+// int main() {
+//     int hours;
+//     char repeat;
+//
+//     cout << "--- Car Parking Fee Calculator ---\n";
+//
+//     while (true) {
+//         cout << "\nEnter number of hours parked: ";
+//         cin >> hours;
+//
+//         if (hours < 0) {
+//             cout << "Invalid input! Hours cannot be negative.\n";
+//             continue;
+//         }
+//
+//         double totalFee = calculateFee(hours);
+//         cout << "Parking fee for " << hours << " hour(s): $" << totalFee << endl;
+//
+//         cout << "\nDo you want to calculate for another user? (y/n): ";
+//         cin >> repeat;
+//
+//         if (repeat != 'y' && repeat != 'Y') {
+//             cout << "\nThank you for using the Parking Fee Calculator!\n";
+//             break;
+//         }
+//     }
+// }
+
