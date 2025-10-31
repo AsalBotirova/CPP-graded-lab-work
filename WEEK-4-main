@@ -1,0 +1,119 @@
+#include <iostream>
+using namespace std;
+#include "math.h";
+
+// //prob 12
+// int main() {
+//     double angle1, angle2, angle3;
+//     cout << "Enter 3 angles of your triangle: ";
+//     cin >> angle1 >> angle2 >> angle3;
+//     if (angle1!=0 && angle2!=0 && angle3!=0) {
+//         if ((angle1+angle2+angle3)==180)
+//             cout << "Triangle is valid" <<endl;
+//         else
+//             cout << "Triangle is not valid"<<endl;
+//     }
+//     return 0;
+// }
+
+// //prob 13
+// int main() {
+//     double a, b, c;
+//     double x1, x2;
+//     double discriminant;
+//     cout << "Enter 3 coefficients of a quadratic equation: a, b, c: " <<endl;
+//     cin >> a >> b >>c;
+//     discriminant = b*b - 4 * a * c;
+//     x1 = (-b + sqrt(discriminant))/(2*a);
+//     x2 = (-b - sqrt(discriminant))/(2*a);
+//     cout << "x1 = " << x1 <<endl;
+//     cout << "x2 = " << x2 << endl;
+//     return 0;
+// }
+
+// //prob 14
+// int main() {
+//     char letter;
+//     cout << "Enter alphabet letter for checking upper or lower case: ";
+//     cin >> letter;
+//
+//     if (letter >='a' && letter <='z')
+//         cout << "Lowercase alphabet" << endl;
+//     else if (letter >= 'A' && letter <= 'Z')
+//         cout << "Uppercase alphabet" << endl;
+//     else
+//         cout << "It is not alphabet " << endl;
+//     return 0;
+// }
+
+// //prob 15
+// int main() {
+//     double weight1, price1;
+//     double weight2, price2;
+//     double package1, package2;
+//
+//     cout << "Enter weight and price for package 1: ";
+//     cin >> weight1 >> price1;
+//     cout << "Enter weight and price for package 2: ";
+//     cin >> weight2 >> price2;
+//
+//     package1 = price1/weight1;
+//     package2 = price2/weight2;
+//
+//     if (package1 > package2)
+//         cout << "Package 2 has a better price" <<endl;
+//     else if (package2 > package1)
+//         cout << "Package 1 has a better price" <<endl;
+//     else
+//         cout <<"Two packages have the same price" <<endl;
+//     return 0;
+// }
+
+// //prob 16
+// int main() {
+//     int threeDigit;
+//     cout <<"Enter 3 digit number to check whether it is palindrome or not: " <<endl;
+//     cin >> threeDigit;
+//
+//     int firstDigit = threeDigit/100;
+//     int lastDigit = threeDigit%10;
+//
+//     if (firstDigit == lastDigit)
+//         cout << threeDigit << " is Palindrome." <<endl;
+//     else
+//         cout << threeDigit << " is not a Palindrome" <<endl;
+//     return 0;
+// }
+
+// //prob 17
+// int main() {
+//     char language;
+//     cout << "Enter a language for greeting: " <<endl;
+//     cin >> language;
+//
+//     if (language=='u')
+//         cout <<"Assalomu aleykum"<<endl;
+//     else if (language=='e')
+//         cout <<"Hello"<<endl;
+//     else if (language=='r')
+//         cout <<"Здравствуйте"<<endl;
+//     else if (language=='g')
+//         cout <<"Hallo!" << endl;
+//     else
+//         cout <<"I do not know this language." <<endl;
+//     return 0;
+// }
+
+// //prob 18
+// int main() {
+//     double x, y;
+//     double distance;
+//     cout <<"Enter x and y coordinate: ";
+//     cin >>x>>y;
+//     distance = sqrt((x*x)+(y*y));
+//     if (distance <= 10)
+//         cout << "Point is within a circle." <<endl;
+//     else
+//         cout <<"Point is outside the circle" <<endl;
+//     return 0;
+// }
